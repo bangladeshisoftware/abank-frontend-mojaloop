@@ -11,12 +11,12 @@ const h     = () => ({ 'Content-Type': 'application/json', Authorization: `Beare
 function Settings() {
   const { profile } = useAuth();
 
-  // ── Quote fee ──────────────────────────────────────────────
+  // Quote fee
   const [quoteFee,    setQuoteFee]    = useState('');
   const [loading,     setLoading]     = useState(false);
   const [getLoading,  setGetLoading]  = useState(false);
 
-  // ── Change password ────────────────────────────────────────
+  // Change password 
   const [currentPw,   setCurrentPw]   = useState('');
   const [newPw,       setNewPw]       = useState('');
   const [confirmPw,   setConfirmPw]   = useState('');
@@ -84,7 +84,7 @@ function Settings() {
     }
   };
 
-  // ── Avatar color ───────────────────────────────────────────
+  // Avatar color
   const avatarColor = '#05569f';
   const initials    = profile?.full_name
     ?.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase() || '?';
@@ -133,7 +133,7 @@ function Settings() {
 
         <Divider />
 
-        {/* ── Change Password ── */}
+        {/*  Change Password  */}
         <Box>
           <Typography fontWeight={700} fontSize={14} mb={2}
             sx={{ textTransform: 'uppercase', letterSpacing: 0.8, color: 'text.secondary' }}>
@@ -171,7 +171,7 @@ function Settings() {
 
         <Divider />
 
-        {/* ── Quote Fee (existing) ── */}
+        {/* Quote Fee (existing) */}
         <Box>
           <Typography fontWeight={700} fontSize={14} mb={2}
             sx={{ textTransform: 'uppercase', letterSpacing: 0.8, color: 'text.secondary' }}>

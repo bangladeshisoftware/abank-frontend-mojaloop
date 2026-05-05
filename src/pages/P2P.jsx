@@ -98,11 +98,7 @@ const P2P = () => {
   // waite for callback - oracle, error
   useEffect(() => {
     if (alsOracleVerifyCallback && selectedUser && idType && receiverNumber) {
-      console.log('full data: ', alsOracleVerifyCallback);
-      console.log('required data: ', alsOracleVerifyCallback?.body?.fspId);
       SearchByParties(alsOracleVerifyCallback?.body?.fspId);
-    } else {
-      console.log('not matched the condition..');
     }
   }, [alsOracleVerifyCallback, alsOracleVerifyErrorCallback]);
   // transfer final search stage.

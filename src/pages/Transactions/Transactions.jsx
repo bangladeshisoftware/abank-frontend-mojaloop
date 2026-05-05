@@ -421,7 +421,7 @@ function Transactions() {
     fetchTransactions(1, rowsPerPage);
   }, [fetchTransactions]);
 
-  // ── Pagination handlers ───────────────────────────────────
+  // Pagination handlers
   const handleChangePage = (_, newPage) => {
     setPage(newPage);
     fetchTransactions(newPage + 1, rowsPerPage);
@@ -434,7 +434,7 @@ function Transactions() {
     fetchTransactions(1, rpp);
   };
 
-  // ── Search submit ─────────────────────────────────────────
+  // Search submit
   const handleSearch = (e) => {
     e.preventDefault();
     setPage(0);
@@ -459,7 +459,6 @@ function Transactions() {
 
   return (
     <Box sx={{ p: { xs: 2, md: 3 } }}>
-      {/* ── Summary Cards ── */}
       <Box sx={{ mb: 3 }}>
         {summaryLoading ? (
           <LinearProgress sx={{ borderRadius: 1, mb: 1 }} />
@@ -501,7 +500,7 @@ function Transactions() {
         )}
       </Box>
 
-      {/* ── Page Header ── */}
+      {/* Page Header */}
       <Box
         sx={{
           display: 'flex',
@@ -619,7 +618,7 @@ function Transactions() {
         </Box>
       </Box>
 
-      {/* ── Search + Filter Bar ── */}
+      {/* Search + Filter Bar */}
       <Paper
         elevation={0}
         component='form'
@@ -764,7 +763,7 @@ function Transactions() {
         </Collapse>
       </Paper>
 
-      {/* ── Transactions Table ── */}
+      {/* Transactions Table */}
       <TableContainer
         component={Paper}
         elevation={0}
@@ -1003,7 +1002,7 @@ function Transactions() {
         </Table>
       </TableContainer>
 
-      {/* ── Pagination ── */}
+      {/* Pagination */}
       <Box
         sx={{
           display: 'flex',

@@ -771,18 +771,16 @@ function CsvUploadDialog({ open, onClose, onDone }) {
   );
 }
 
-// ================================================================
 //  MAIN PAGE
-// ================================================================
 function Merchant() {
   const theme = useTheme();
-  // ── data ──────────────────────────────────────────────────
+  // data
   const [parties, setParties] = useState([]);
   const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(false);
   const [actionLoading, setActionLoading] = useState(null);
 
-  // ── filters ───────────────────────────────────────────────
+  // filters
   const [search, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState('');
   const [idTypeFilter, setIdTypeFilter] = useState('');
@@ -790,17 +788,17 @@ function Merchant() {
   const [dateTo, setDateTo] = useState('');
   const [showFilters, setShowFilters] = useState(false);
 
-  // ── pagination ────────────────────────────────────────────
+  // pagination
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
-  // ── dialogs ───────────────────────────────────────────────
+  // dialogs
   const [formOpen, setFormOpen] = useState(false);
   const [editData, setEditData] = useState(null);
   const [csvOpen, setCsvOpen] = useState(false);
   const [expandedId, setExpandedId] = useState(null);
 
-  // ── fetch ─────────────────────────────────────────────────
+  // fetch
   const fetchData = useCallback(
     async (pg = 0, rpp = 10) => {
       setLoading(true);
@@ -974,7 +972,7 @@ function Merchant() {
         </Box>
       </Box>
 
-      {/* ── Summary chips ── */}
+      {/* Summary chip */}
       <Box sx={{ display: 'flex', gap: 1.5, mb: 2, flexWrap: 'wrap' }}>
         {[
           { label: `${total} Total`, color: '#05569f' },
@@ -996,7 +994,7 @@ function Merchant() {
         ))}
       </Box>
 
-      {/* ── Search + Filter bar ── */}
+      {/* Search and Filter bar */}
       <Paper
         elevation={0}
         component='form'
@@ -1164,7 +1162,7 @@ function Merchant() {
         </Collapse>
       </Paper>
 
-      {/* ── Table ── */}
+      {/* Table */}
       <TableContainer
         component={Paper}
         elevation={0}
