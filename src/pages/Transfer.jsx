@@ -21,7 +21,7 @@ import { FiLoader } from 'react-icons/fi';
 import SelectUserOption from '../components/SelectUserOption';
 import { useAuth } from '../context/AuthContext';
 
-const P2P = () => {
+const Transfer = () => {
   const {
     resetState,
     alsputCallback,
@@ -97,7 +97,10 @@ const P2P = () => {
   };
   // waite for callback - oracle, error
   useEffect(() => {
+    console.log('event fire.');
     if (alsOracleVerifyCallback && selectedUser && idType && receiverNumber) {
+      console.log('call this... ');
+      console.log(alsOracleVerifyCallback);
       SearchByParties(alsOracleVerifyCallback?.body?.fspId);
     }
   }, [alsOracleVerifyCallback, alsOracleVerifyErrorCallback]);
@@ -682,4 +685,4 @@ const P2P = () => {
   );
 };
 
-export default P2P;
+export default Transfer;
