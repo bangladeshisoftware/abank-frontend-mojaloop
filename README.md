@@ -1,4 +1,4 @@
-# A Bank — Frontend Portal
+# A Bank - Frontend Portal
 
 The React-based admin portal for **A Bank DFSP**, built with Vite + React. Provides a real-time dashboard for merchant management, payment initiation, transaction monitoring, and live Mojaloop callback inspection — all powered by a persistent WebSocket connection to the A Bank backend.
 
@@ -270,4 +270,4 @@ src/
 
 ## License
 
-Private — Bangladeshi Software LTD. All rights reserved.
+Private - Bangladeshi Software LTD. All rights reserved.
