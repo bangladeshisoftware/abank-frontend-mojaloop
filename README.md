@@ -45,7 +45,8 @@ The React-based admin portal for **A Bank DFSP**, built with Vite + React. Provi
 - **Party Lookup** — resolve payee FSP by ID type and identifier
 - **Quote Initiation** — send a quote request and receive ILP data in real time
 - **Transfer Execution** — confirm and submit a transfer with ILP packet and condition
-- Support for all payment rails: `P2P`, `INSTANT`, `BULK`, `NPSB`, `RTGS`, `BEFTN`
+- Support for all payment rails: `P2P`, `INSTANT`
+- Coming soon: `BULK`, `NPSB`, `RTGS`, `BEFTN`
 
 ### Real-Time Callback Monitor
 
