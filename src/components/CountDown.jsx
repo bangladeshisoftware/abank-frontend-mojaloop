@@ -1,3 +1,10 @@
+/**************************************************************************
+ * Copyright © 2026 Bangladeshi Software Ltd. All rights reserved.
+ * Distributed under the license terms specified in this repository.
+ *
+ * ORIGINAL AUTHOR: Muhammad Nasim (Developer)
+ **************************************************************************/
+
 import { useState, useEffect } from 'react';
 
 function Countdown({ targetDate, onFinish }) {
@@ -27,4 +34,4 @@ function Countdown({ targetDate, onFinish }) {
 // Usage example:
 // <Countdown targetDate="2025-11-04T14:20:49.578Z" onFinish={() => console.log("Done!")} />
 
-export default Countdown
+export default Countdown;

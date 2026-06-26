@@ -1,3 +1,10 @@
+/**************************************************************************
+ * Copyright © 2026 Bangladeshi Software Ltd. All rights reserved.
+ * Distributed under the license terms specified in this repository.
+ *
+ * ORIGINAL AUTHOR: Muhammad Nasim (Developer)
+ **************************************************************************/
+
 import { useState, useEffect } from 'react';
 import {
   Box,
@@ -45,7 +52,7 @@ import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 import { useAuth } from '../context/AuthContext';
 
-//  helpers 
+//  helpers
 const fmt = (n, d = 2) =>
   Number(n || 0).toLocaleString('en-US', {
     minimumFractionDigits: d,
